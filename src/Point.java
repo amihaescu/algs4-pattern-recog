@@ -68,7 +68,7 @@ public class Point implements Comparable<Point> {
             return Double.POSITIVE_INFINITY;
         }
 
-        double slope = (double)Math.abs(that.y - this.y)/(double)Math.abs(that.x - this.x);
+        double slope = (double)(that.y - this.y)/(double)(that.x - this.x);
         return slope;
 
     }
@@ -101,11 +101,11 @@ public class Point implements Comparable<Point> {
     public static void main(String[] args) {
         /* YOUR CODE HERE */
         Point p_ref = new Point(1,1);
-        Point p1 = new Point(2,5);
-        Point p2 = new Point(4,2);
-        System.out.println("Slope from "+p1+" to "+p2+" is "+p2.slopeTo(p1));
-        System.out.println(p1.compareTo(p2));
-        System.out.print(p_ref.SLOPE_ORDER.compare(p2,p1));
+        Point p = new Point(229,113);
+        Point q = new Point(134,382);
+        System.out.println("Slope from "+p+" to "+q+" is "+p.slopeTo(q));
+        //System.out.println(p1.compareTo(p2));
+        //System.out.print(p_ref.SLOPE_ORDER.compare(p2,p1));
 
     }
 }

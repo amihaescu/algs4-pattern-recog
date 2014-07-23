@@ -56,7 +56,7 @@ public class Brute {
     }
     public static void main(String[] args){
         setUp();
-        Point[] points = getInput("input8.txt");
+        Point[] points = getInput(args[0]);
         Arrays.sort(points);
         int size = points.length;
         for (int i = 0; i < size-3; i++){

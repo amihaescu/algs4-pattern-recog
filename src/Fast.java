@@ -32,7 +32,7 @@ public class Fast {
         ArrayList<Point> coll = new ArrayList<Point>();
         ArrayList<Point> prevColl = new ArrayList<Point>();
         setUp();
-        Point[] points = getInput("input8.txt");
+        Point[] points = getInput(args[0]);
         int size = points.length;
         for (int i = 0; i < size - 1; i++){
             Point origin = points[i];
